@@ -1,0 +1,40 @@
+<div class="container-fluid Case_Studies_BG p-0 animated fadeIn
+" onmouseover="navBarColorBefore()">
+  <!--      page 1 Product Finder   -->
+  <div class="container-fluid product_category_bg">
+    <!--  -->
+    <div style="height: 150px;"></div>
+    <!--  -->
+    <h1 class="page_product_path">
+      HOME &nbsp; &nbsp; • &nbsp;<span style="color: black;">PRODUCT CATEGORIES</span>
+    </h1>
+    <!-- Product heading -->
+    <h1 class="products_heading mt-4 mb-4">Product Category</h1>
+    <!--  -->
+    <div class="container py-3">
+      <div class="row">
+        <ng-container *ngFor="let category of ProductCategory">
+          <div class="col-12 col-md-4">
+            <a [routerLink]="['./Allproduct']">
+             <div class="category_card">
+               <img [src]="category.CategoryImg" width="100%" class="img-fluid category_img" alt="">
+              <h1 class="category_heading">{{category.CategoryName}}</h1>
+             </div>
+            </a>
+           </div>
+        </ng-container>
+      </div>
+
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
+<!-- back up routing -->
+<!-- <p>product works!</p>
+<a [routerLink]="['../product/allproduct']">
+    <h2> go all product</h2>
+</a>
+<a [routerLink]="['../product/allproduct/mainproduct']">
+    <h2>go main product</h2>
+
+</a> -->

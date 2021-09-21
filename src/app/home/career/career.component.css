@@ -1,0 +1,379 @@
+.top_margin_careers {
+  height: 190px;
+}
+.careers_heading_path {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+}
+
+.careers_heading {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 8px;
+  font-size: 55px;
+}
+.careers_tagLine {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 24px;
+  font-family: "Titillium Web";
+}
+.careers_bg_img {
+  background-image: url(../../../assets/career/career_bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: 60px;
+}
+.careers_bg_img h6,
+.careers_bg_img h1 {
+  color: white;
+}
+.search_bar {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.search_input {
+  background: transparent !important;
+  border: 1px solid red;
+  font-family: "Titillium Web";
+}
+.btn_padding {
+  padding: 10px;
+  background: var(--main-parent-colorOne);
+  margin-left: 18px;
+}
+.btn_padding i {
+  color: white;
+}
+.full_radius,
+.radius_l,
+.radius_r,
+.map_btn {
+  box-shadow: 0px 4px 13px -5px rgba(0, 0, 0, 0.28);
+}
+
+.full_radius {
+  border-radius: 20px;
+  border: none;
+  padding: 10px 18px;
+}
+#sel1 {
+  position: relative;
+  top: -8px;
+  height: 45px;
+}
+.btn_padding.full_radius {
+  border-radius: 161px;
+
+  padding: 12px 13px;
+  position: relative;
+  top: 3px;
+}
+.radius_l {
+  border-radius: 20px 0px 0px 20px;
+  -moz-border-radius: 20px 0px 0px 20px;
+  -webkit-border-radius: 20px 0px 0px 20px;
+  border: none;
+  padding: 10px 18px;
+}
+.radius_r {
+  border-radius: 0px 20px 20px 0px;
+  -moz-border-radius: 0px 20px 20px 0px;
+  -webkit-border-radius: 0px 20px 20px 0px;
+  border: none;
+  padding: 10px 18px;
+}
+.ippadding {
+  padding-top: 26px;
+}
+.map_btn {
+  background: white;
+  border: none !important;
+}
+/* filter bar */
+.filters_bar {
+  font-size: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.filters_bar a {
+  margin-left: 22px;
+  color: black;
+  font-weight: 400;
+  padding-bottom: 11px;
+  display: inline-block;
+}
+.filters_select {
+  display: inline;
+  margin-left: 18px;
+}
+.filters_select select {
+  border: none !important;
+  box-shadow: none;
+}
+.rQ_id {
+  color: gray;
+  font-weight: 600;
+}
+.heading_table {
+  color: gray;
+  font-weight: 600;
+}
+.table_data {
+  color: black;
+  font-weight: 600;
+}
+.post_name {
+  font-size: 23px;
+  font-weight: 600;
+  color: var(--main-parent-colorOne);
+}
+/* toast_Results_box */
+.toast_Results_box {
+  margin-top: 26px;
+}
+.result_box {
+  background: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px -2px rgba(0, 0, 0, 0.28);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.tableRow {
+  background: white;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #d1d1d1;
+  padding-left: 15px;
+}
+.tableRow:hover {
+  background: #eeeeee;
+}
+.down_mark {
+  font-weight: 800;
+  font-size: 35px;
+  color: black;
+}
+.a-arrow {
+  margin-right: 0;
+  padding-left: 2px;
+  padding-right: 7px;
+}
+/*  */
+@media screen and (max-width: 767px) {
+  .careers_heading {
+    font-size: 48px;
+  }
+  .careers_bg {
+    background-image: none;
+    background: white;
+  }
+  .careers_heading {
+    padding: 0px;
+    font-size: 52px;
+  }
+  .careers_tagLine {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  .search_bar {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+  .btn_padding {
+    padding: 5px;
+    width: 100%;
+  }
+  .btn_padding i {
+    padding-left: 30%;
+    color: transparent;
+    margin-bottom: 12px;
+  }
+  .btn_padding::after {
+    content: "Search now";
+    color: white;
+  }
+  .ippadding {
+    padding-top: 10px;
+  }
+  .careers_bg_img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .post_name {
+    font-size: 19px;
+  }
+  .rQ_id {
+    font-size: 15px;
+  }
+  .heading_table {
+    font-size: 14px;
+  }
+  .table_data {
+    font-size: 12px;
+  }
+  .down_mark {
+    font-size: 20px;
+  }
+  .filters_bar {
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+/*----------------------------career 2 page--------------------*/
+
+.Block_Career_text {
+  font-size: 23px;
+  text-align: center;
+}
+.Block_Career_text span {
+  font-weight: 700;
+}
+.ico_img {
+  width: 90px;
+}
+.card_heading {
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  margin-top: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.main_card {
+  background: var(--main-parent-colorOne);
+  border-radius: 17px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: all;
+  transition-duration: 200ms;
+  -webkit-box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 21px -6px rgba(0, 0, 0, 0.75);
+}
+.main_card:hover {
+  transform: scale(1, 1);
+}
+.ioc_row {
+  margin-top: 35px;
+}
+.ET::after {
+  content: "Finance";
+  color: var(--main-parent-colorOne);
+}
+/* Current card */
+.Current_ico {
+  width: 120px;
+}
+.Current_block {
+  background: var(--main-parent-colorOne);
+  border-radius: 15px;
+  margin-top: 22px;
+}
+/*  card popup */
+.card_popup {
+  padding: 20px;
+}
+.card_popup_heading {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+}
+.card_popup_text {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.card_btn {
+  width: 100%;
+  background: var(--main-parent-colorOne);
+  color: white;
+  margin-bottom: 22px;
+  font-size: 20px;
+}
+.close {
+  color: var(--main-parent-colorOne);
+  opacity: 1;
+  position: relative;
+  top: -25px;
+  font-size: 33px;
+  left: 9px;
+}
+/* take an Aptitude Test */
+.aptitude {
+  border: 1px solid var(--main-parent-colorOne);
+  min-height: 300px;
+}
+.aptitude_heading_1,
+.aptitude_heading_1 {
+  text-align: center;
+}
+.aptitude_heading_2 {
+  color: #c82230;
+}
+.aptitude_btn {
+  width: 100%;
+  outline: none;
+  box-shadow: none;
+}
+.aptitude_btn:hover {
+  background: #c82230;
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .card_heading {
+    font-size: 14px;
+  }
+  .ico_img {
+    width: 60px;
+  }
+  .card_padding {
+    padding: 0;
+  }
+  .Block_Career_text {
+    font-size: 15px;
+    text-align: center;
+  }
+  .Current_ico {
+    width: 80px;
+  }
+}
+/* PopupModel */
+.PopupModel {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.modal-content {
+  border-radius: 12px;
+}
+.Popup_heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 12px;
+}
+button {
+  text-transform: uppercase;
+}
+.Popup_card {
+  padding: 30px;
+}

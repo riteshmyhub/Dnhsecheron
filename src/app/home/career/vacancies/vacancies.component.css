@@ -1,0 +1,151 @@
+.top_margin_careers {
+  height: 145px;
+}
+.careers_heading_path {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+  color: white;
+}
+.careers_heading {
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  padding: 8px;
+  font-size: 55px;
+}
+.careers_tagLine {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 24px;
+}
+.careers_bg_img {
+  background-image: url(../../../../assets/career/career_bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* filter bar */
+
+.company {
+  color: gray;
+  font-weight: 600;
+}
+.heading_table {
+  color: gray;
+  font-weight: 600;
+}
+.table_data {
+  color: black;
+  font-weight: 600;
+}
+.post_name {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--main-parent-colorOne);
+}
+/* toast_Results_box */
+.toast_Results_box {
+  margin-top: 26px;
+}
+.tableRow {
+  background: #f7f7f7;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #d1d1d1;
+  cursor: pointer;
+}
+.tableRow:hover {
+  background: #eeeeee;
+}
+.down_mark {
+  font-weight: 800;
+  font-size: 35px;
+  color: gray;
+}
+/*  */
+@media screen and (max-width: 767px) {
+  .careers_heading {
+    font-size: 48px;
+  }
+  .careers_bg {
+    background-image: none;
+    background: white;
+  }
+  .careers_heading {
+    padding: 0px;
+    font-size: 52px;
+  }
+  .careers_tagLine {
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+
+  .careers_bg_img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* popup */
+.PopupModel {
+  display: block;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+.modal-content {
+  border-radius: 12px;
+}
+.Popup_heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: start;
+  margin-bottom: 8px;
+}
+button {
+  text-transform: uppercase;
+}
+.Popup_card {
+  padding: 30px;
+}
+.Popup_company_name {
+  color: grey;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.Resume {
+  outline: none;
+  box-shadow: none;
+}
+.Popup_done {
+  border: none;
+  padding: 14px;
+  text-align: center;
+  position: relative;
+}
+.Popup_done h3 {
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.successfully {
+  color: #14c32b;
+  position: absolute;
+  top: -3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.successText {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-top: 50px;
+}

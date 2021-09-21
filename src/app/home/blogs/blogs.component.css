@@ -1,0 +1,113 @@
+/*  */
+.card_date a {
+  text-decoration: none;
+  color: gray !important;
+}
+.address_contect_bar {
+  color: #7b7b7a;
+  font-size: 1vw;
+  font-weight: bold;
+}
+.address_contect_bar_right {
+  color: #7b7b7a;
+  font-size: 1vw;
+  text-align: end;
+  font-weight: bold;
+}
+/*  */
+.blog_section {
+  background-color: #e4e4e4;
+  height: auto;
+  padding: 35px;
+}
+.top_margin_blog {
+  height: 150px;
+}
+.blog_heading {
+  text-align: center;
+  font-weight: bold;
+  color: var(--main-parent-colorOne);
+  padding: 8px;
+  font-size: 55px;
+}
+
+.blog_heading_path {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+.main_blog_aria {
+  background: white;
+  height: auto;
+}
+.blog_link {
+  background-color: transparent;
+  text-align: center;
+  padding: 5px;
+  text-transform: capitalize;
+  border: 1px solid gray;
+  color: gray;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.3vw;
+}
+.blog_link:hover {
+  border: 1px solid var(--main-parent-colorOne);
+  color: var(--main-parent-colorOne);
+}
+.blog_topic {
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/* card */
+.cards {
+  padding: 15px 10px 15px 10px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.75);
+  background: white;
+}
+.topic,
+.date {
+  font-size: 17px;
+  font-weight: 400;
+}
+.topic {
+  float: right;
+}
+.title {
+  font-size: 25px;
+  color: #c82331;
+  font-weight: 700;
+  display: block;
+  padding-bottom: 10px;
+}
+.description {
+  min-height: 100px;
+}
+.moreRead {
+  color: white;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .blog_link {
+    font-size: 2.6vw;
+  }
+  .blog_topic {
+    margin-bottom: 20px;
+  }
+  .blog_heading {
+    text-align: center;
+    font-weight: bold;
+    color: var(--main-parent-colorOne);
+    padding: 8px;
+    font-size: 47px;
+  }
+  .blog_section {
+    padding: 5px;
+  }
+}

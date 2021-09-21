@@ -1,0 +1,71 @@
+.Case_Studies_link {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+.active {
+  color: #e74c3c;
+}
+.Case_main_heading {
+  color: #e31e24;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  font-size: 55px;
+}
+.Case_Studies_first_grid {
+  background-image: url(../../../assets/casestudy/casebgi.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+.grid_first_box {
+  height: 180px;
+}
+
+.first_col_heading {
+  font-weight: 400;
+  cursor: pointer;
+}
+.first_col_heading::before {
+  content: "\f0c1\00a0\00a0";
+  font-family: FontAwesome;
+}
+.first_col_heading:hover {
+  color: #c82230;
+}
+.industries_img {
+  position: relative;
+  animation: fadeIn;
+  animation-duration: 1s;
+}
+.industries_name {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+}
+.industries_name:hover {
+  color: #e72233;
+}
+@media screen and (max-width: 767px) {
+  .Case_main_heading {
+    font-size: 48px;
+  }
+  .first_col_heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 3vw;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+  .grid_first_box {
+    height: auto;
+  }
+  .industries_name {
+    font-size: 20px;
+  }
+}

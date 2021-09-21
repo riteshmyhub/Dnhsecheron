@@ -1,0 +1,132 @@
+
+a {
+  text-decoration: none !important;
+}
+.section {
+  height: 100vh;
+  width: 100vw;
+  background-color: transparent;
+}
+
+/* css main home page */
+
+.pf_outer_box {
+  padding: 28px;
+  background-color: var(--main-parent-colorOne);
+  border-radius: 50px;
+}
+.product_finder_img {
+  width: 250px;
+  position: relative;
+  top: -170px;
+  left: 50px;
+  z-index: 1;
+}
+.pf_inner_box {
+  padding: 10px;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.easy_product_finder_page {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-parent-colorTwo);
+}
+/*  */
+.easy_product_finder_heading {
+  color: var(--main-parent-colorOne);
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.3vw;
+  font-weight: bold;
+  margin-top: 28px;
+}
+.easy_product_finder_tagline {
+  color: var(--main-parent-colorOne);
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.1vw;
+  margin-bottom: 80px;
+}
+/* nav module */
+
+.finder_nav_number {
+  background-color: var(--main-parent-colorOne);
+  border-radius: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-weight: 300;
+}
+
+.link_E_P_F {
+  color: gray;
+  display: inline-block;
+  padding-top: 6px;
+  cursor: pointer;
+}
+.link_E_P_F:hover {
+  color: black;
+}
+.nav_number {
+  color: white;
+  font-size: 1.5vw;
+}
+/* media query */
+
+@media screen and (max-width: 767px) {
+  .easy_product_finder_heading {
+    font-size: 4.6vw;
+  }
+  .easy_product_finder_tagline {
+    font-size: 2.2vw;
+  }
+  .pf_outer_box {
+    padding: 8px;
+    border-radius: 0px;
+    background-color: #f5f5f5;
+  }
+  .pf_inner_box {
+    padding: 8px;
+    border-radius: 0px;
+  }
+  .easy_product_finder_tagline {
+    margin-bottom: 60px;
+  }
+  /* home bottom navigation  */
+  .bottom_navigation_right {
+    font-size: 3vw;
+  }
+  .bottom_navigation_right span {
+    font-size: 3vw;
+  }
+  .bottom_arrow {
+    width: 3.3vw;
+  }
+  .bottom_navigation_left {
+    font-size: 3vw;
+  }
+  .bottom_navigation_center {
+    font-size: 3vw;
+  }
+  .sysdown {
+    float: right;
+    padding-right: 12px;
+  }
+  .link_E_P_F {
+    display: block;
+    background: var(--main-parent-colorOne);
+    color: white;
+    padding-top: 8px;
+    padding-bottom: 11px;
+  }
+  .finder_nav_number {
+    background-color: transparent;
+    color: white;
+  }
+}

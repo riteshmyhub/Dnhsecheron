@@ -1,0 +1,109 @@
+<div class="container-fluid careers_bg p-0 animated fadeIn" onmouseover="navBarColorBefore()">
+  <div class="top_margin_careers"></div>
+  <!-- top margin -->
+  <div class="container-fluid careers_bg_img god_css">
+    <span>
+      <h6 class="careers_heading_path mt-2">
+        <span style="color: white;">HOME • </span>
+        CAREERS
+      </h6>
+      <h1 class="careers_heading mt-1">Careers</h1>
+    </span>
+  </div>
+
+  <div class="container toast_Results_box">
+    <span>5 Results </span>
+  </div>
+
+<!--------------result here--------------->
+<div id="accordion" class="p-3">
+  <ng-container *ngFor="let Vacancie of Vacancies">
+    <div class="card my-4">
+      <div class="card-header">
+        <div class="row tableRow">
+          <div class="col-md-4">
+            <div class="row" data-toggle="collapse" [attr.data-target]="Vacancie.Idtarget" aria-expanded="true">
+              <div class="col-2 god_css">
+                <span class="down_mark">⌵</span>
+              </div>
+              <div class="col-10">
+                <span class="post_name">{{Vacancie.postname}}</span><br />
+                <span class="company">{{Vacancie.company}}</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <span class="heading_table">Location</span><br />
+            <span class="table_data">{{Vacancie.location}}</span>
+          </div>
+          <div class="col-md-2">
+            <span class="heading_table">Category</span><br />
+            <span class="table_data">{{Vacancie.category}}</span>
+          </div>
+          <div class="col-md-2">
+            <span class="heading_table">Posted</span><br />
+            <span class="table_data">{{Vacancie.posted}}</span>
+          </div>
+          <div class="col-md-2 god_css">
+            <button class="btn btn-danger" (click)="Popup()">Apply Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div [id]="Vacancie.Id" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          <p>{{Vacancie.dropdowntext}}</p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+</div>
+
+<!-- popup model -->
+<div *ngIf="PopupModel" class="modal PopupModel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <!-- Form -->
+    <div *ngIf="popupForm" class="modal-content animated Popup_card bounceInUp">
+      <div>
+        <h5 class="Popup_heading">Sales & Marketing</h5>
+        <h6 class="Popup_company_name">Fencon Mazameer Facade Technology - Trichur, Kerala</h6>
+      </div>
+      <form>
+        <div class="modal-body p-0">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Your name</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Your email</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter email">
+          </div> 
+          <div class="form-group">
+            <label for="exampleInputEmail1">Phone Number (optional)</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Resume *</label>
+            <input type="file" class="form-control-file Resume" id="exampleFormControlFile1">
+          </div>   
+        </div>
+      <div class="p-0">
+        <div class="row">
+          <div class="col-12 pb-2">
+            <button type="button" (click)="submit()" class="btn btn-danger btn-block">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    </div>
+    <!-- done -->
+    <div *ngIf="popupdone" class="modal-content Popup_done animated bounceIn">
+      <img src="../../../../assets/career/tick.png" class="img-fluid successfully" width="130px" alt="">
+        <h1 class="successText">Done!</h1>
+        <h3 class="my-3">application successfully submitted</h3>
+        <button class="btn btn-success" (click)="close()">OK</button>
+    </div>
+  </div>
+</div>

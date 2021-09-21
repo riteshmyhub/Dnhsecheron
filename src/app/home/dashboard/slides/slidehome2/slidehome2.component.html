@@ -1,0 +1,81 @@
+<div class="container-fluid p-0">
+
+  <div class="container-fluid sub_home_two_bg">
+
+    <div class="sub_home_margin"></div>
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-lg-6 sub_home_two_grid d-flex justify-content-start align-items-center">
+          <div class="sub_grid_left_padding">
+            <h3 class="sub_home_left_icon_text">
+              consistent quality.
+            </h3>
+            <h3 class="sub_home_left_icon_text">
+              innovative products for complete welding
+            </h3>
+            <!--  -->
+            <h5 class="sub_home_left_icon_sub_text mt-3">D&H secheron is one of the welding manufacturers in
+              india</h5>
+            <!--  -->
+            <div class="container-fluid p-4">
+              <div class="row">
+                <div class="col-3" *ngFor="let imglink of Manufacturers">
+                  <img [src]="imglink" class="img-fluid sub_home_two_grid_icon mx-auto d-block" alt="" srcset="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="col-lg-6 sub_home_two_grid">
+
+          <div class="sub_grid_padding">
+
+            <div class="container-fluid row_one">
+              <div class="row">
+                <div class="col-6 sub_home_grid_six_padding">
+                  <app-couter-part couterName='years of experience' end=50>
+                  </app-couter-part>
+                </div>
+                <div class="col-6 sub_home_grid_six_padding grid_left">
+                  <app-couter-part couterName='industries catered' end=200>
+                  </app-couter-part>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid row_two">
+              <div class="row">
+                <div class="col-6 sub_home_grid_six_padding">
+                  <app-couter-part couterName='countries covered' end=30>
+                  </app-couter-part>
+                </div>
+                <div class="col-6 sub_home_grid_six_padding grid_left">
+                  <app-couter-part couterName='employer' end=600>
+                  </app-couter-part>
+                </div>
+              </div>
+            </div>
+
+            <div class="container-fluid row_three">
+              <div class="row">
+                <div class="col-6 sub_home_grid_six_padding">
+                  <app-couter-part couterName='products' end=200>
+                  </app-couter-part>
+                </div>
+                <div class="col-6 sub_home_grid_six_padding grid_left">
+                  <app-couter-part couterName='SKUs' end=400>
+                  </app-couter-part>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

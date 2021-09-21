@@ -1,0 +1,48 @@
+<div class="container-fluid Case_Studies_BG p-0 animated fadeIn" onmouseover="navBarColorBefore()">
+  <!--      page 1 Product Finder   -->
+  <div class="container-fluid Product_Finder_bg">
+    <!--  -->
+    <div style="height: 130px;"></div>
+
+    <!-- page 2 all product  -->
+    <div class="container py-4">
+      <!-- Product heading -->
+      <h1 class="products_heading mb-4  ">Welding Machine
+        <i class="fa fa-chevron-right"></i> <span class="sub_heading"> Products</span>
+      </h1>
+      <!--  -->
+      <span class="available">(5 products available)</span>
+      <ng-container *ngFor="let Product of Products">
+        <div class="row products_card py-2 my-4">
+          <div class="col-md-3 p-2">
+            <img [src]="Product.img" class="img-fluid mx-auto d-block" alt="">
+          </div>
+          <div class="col-md-7 center_v">
+            <span>
+              <h2 class="products_name">{{(Product.name.length>58)?(Product.name | slice:0:58)+'....':(Product.name)}}
+              </h2>
+              <span class="ratings">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </span>
+              <h3 class="products_price">{{Product.price}}</h3>
+              <div class="products_short_description">
+                <span>{{(Product.description.length>325)?(Product.description | slice:0:325)+'.......':(Product.description)}}</span>
+              </div>
+              <a [routerLink]="[Product.link]" class="btn btn-sm btn-danger products_read_more">read more</a>
+            </span>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </ng-container>
+    </div>
+
+  </div>
+
+  <!--  -->
+</div>
+<!--  -->
+<router-outlet></router-outlet>

@@ -1,0 +1,52 @@
+<div class="horizontals">
+  <div class="section" onmouseover="navBarColor()">
+    <app-slidehome1></app-slidehome1>
+  </div>
+
+  <div class="section" onmouseover="navBarColorBefore()">
+    <app-slidehome2></app-slidehome2>
+  </div>
+
+  <div class="section" onmouseover="navBarColorBefore()">
+    <app-slidehome3></app-slidehome3>
+  </div>
+
+  <div class="section" onmouseover="navBarColorBefore()">
+    <app-slidehome4></app-slidehome4>
+  </div>
+
+  <div class="section" onmouseover="navBarColorBefore()">
+    <app-slidehome5></app-slidehome5>
+  </div>
+</div>
+
+<!-- bottom navbar -->
+<div class="container-fluid fixed-bottom">
+  <div class="row">
+    <div class="col-md-4 col-3">
+      <h4 class="bottom_navigation_left">About</h4>
+    </div>
+    <div class="col-md-4 col-4">
+      <h4 class="bottom_navigation_center">Scroll To explore ⎯⎯⎯</h4>
+    </div>
+    <div class="col-md-4 col-5">
+      <h4 class="bottom_navigation_right">
+        Contact
+        <span
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Overview
+          <img
+            class="bottom_arrow"
+            src="../../../../../assets/home/right.svg"
+            alt=""
+            srcset=""
+          />
+        </span>
+      </h4>
+    </div>
+  </div>
+</div>
+<!-- Mouse scroll popup indicator--> 
+<span *ngIf="scrollIcon" class="scroll_indicator_icon god_css ">
+  <img src="../../../assets/home/scroll.png" class="img-fluid" alt="">
+</span>
+<router-outlet></router-outlet>
